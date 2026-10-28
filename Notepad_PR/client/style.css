@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #1e1e1e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#note {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    border: none;
+    outline: none;
+    resize: none;
+
+    background: #1e1e1e;
+    color: #d4d4d4;
+
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+
+    caret-color: #ffffff;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #5a5a5a #1e1e1e;
+}
+
+/* Chrome / CEP scrollbar */
+#note::-webkit-scrollbar {
+    width: 10px;
+}
+
+#note::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+#note::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+    border-radius: 0;
+}
+
+#note::-webkit-scrollbar-thumb:hover {
+    background: #707070;
+}
+
+#note::selection {
+    background: #264f78;
+}
